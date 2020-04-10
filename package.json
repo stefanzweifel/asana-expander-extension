@@ -1,11 +1,11 @@
 {
-  "name": "web-extension-starter",
+  "name": "asana-expander-extension",
   "version": "2.0.0",
-  "description": "Web extension starter",
+  "description": "Automatically show all comments on an Asana task an expand longer comments.",
   "private": true,
   "main": "src/scripts/background.js",
-  "repository": "https://github.com/abhijithvijayan/web-extension-starter.git",
-  "author": "abhijithvijayan <34790378+abhijithvijayan@users.noreply.github.com>",
+  "repository": "https://github.com/stefanzweifel/asana-expander-extension.git",
+  "author": "Stefan Zweifel <hello@stefanzweifel.io>",
   "license": "MIT",
   "engines": {
     "node": ">=10",

@@ -8,7 +8,7 @@
     "128": "assets/icons/favicon-128.png"
   },
   "description": "Automatically show all comments on an Asana task an expand longer comments.",
-  "homepage_url": "https://github.com/abhijithvijayan/web-extension-starter",
+  "homepage_url": "https://github.com/stefanzweifel/asana-expander-extension",
   "short_name": "Asana Expander",
   "permissions": [
     "tabs",
@@ -22,7 +22,7 @@
   },
   "__firefox__applications": {
     "gecko": {
-      "id": "{754FB1AD-CC3B-4856-B6A0-7786F8CA9D17}"
+      "id": "{754FB1AD-CC3B-4856-B6A0-7786F8CA9D20}"
     }
   },
   "__chrome__minimum_chrome_version": "49",
