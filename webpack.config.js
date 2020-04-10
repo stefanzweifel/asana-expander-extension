@@ -47,9 +47,6 @@ module.exports = {
         manifest: './src/manifest.json',
         background: './src/scripts/background.js',
         contentScript: './src/scripts/contentScript.js',
-        popup: './src/scripts/popup.js',
-        options: './src/scripts/options.js',
-        styles: ['./src/styles/popup.scss', './src/styles/options.scss'],
     },
 
     output: {
@@ -132,18 +129,6 @@ module.exports = {
             ],
             cleanStaleWebpackAssets: false,
             verbose: true,
-        }),
-        new HtmlWebpackPlugin({
-            template: 'src/options.html',
-            // inject: false,
-            chunks: ['options'],
-            filename: 'options.html',
-        }),
-        new HtmlWebpackPlugin({
-            template: 'src/popup.html',
-            // inject: false,
-            chunks: ['popup'],
-            filename: 'popup.html',
         }),
         new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }]),
         extensionReloaderPlugin,
