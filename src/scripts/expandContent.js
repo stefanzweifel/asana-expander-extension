@@ -1,13 +1,23 @@
+function $(selector, scope = document) {
+    return scope.querySelector(selector);
+}
 
-export function expandContent () {
+function $$(selector, scope = document) {
+    return Array.from(scope.querySelectorAll(selector));
+}
 
-    console.log('====== EXPAND CONTENT ======');
+export function expandStoryFeed() {
+    $$('.TaskStoryFeed-expandLink').forEach((link) => {
+        console.log('::asana-expander::expandStoryFeed', link);
 
-    for (let link of document.getElementsByClassName('TruncatedRichText-expand')) {
         link.click();
-    };
+    });
+}
 
-    for (let link of document.getElementsByClassName('TaskStoryFeed-expandLink')) {
+export function expandRichText () {
+    $$('.TruncatedRichText--truncated').forEach((link) => {
+        console.log('::asana-expander::expandRichText', link);
+
         link.click();
-    };
+    });
 }
