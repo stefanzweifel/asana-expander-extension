@@ -8,8 +8,8 @@ This extension solves this problem my automatically clicking on those links when
 
 ## Installation
 
-- [Chrome Extension]()
-- [Firefox Add-on]()
+- [Chrome Extension](https://chrome.google.com/webstore/detail/asana-expander/goplcobjbaafmhoadgihbepeejbajbki)
+- [Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/asana-expander/)
 
 ## Local Development
 
