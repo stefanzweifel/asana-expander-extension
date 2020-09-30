@@ -1,6 +1,6 @@
 {
   "name": "asana-expander-extension",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Automatically show all comments on an Asana task an expand longer comments.",
   "private": true,
   "main": "src/scripts/background.js",
