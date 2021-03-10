@@ -6,6 +6,8 @@ Do you also hate to click on those "See more" links in Asana, just to see the la
 
 This extension solves this problem my automatically clicking on those links whenever you open a task with many comments or when a comment is longer than 300 characters.
 
+Read more about why this extension exists [on my blog](https://stefanzweifel.io/posts/asana-expander-a-browser-extension-to-fix-asanas-ux-problems/).
+
 ## Installation
 
 - [Chrome Extension](https://chrome.google.com/webstore/detail/asana-expander/goplcobjbaafmhoadgihbepeejbajbki)
