@@ -8,8 +8,7 @@
   "author": "Stefan Zweifel <hello@stefanzweifel.io>",
   "license": "MIT",
   "engines": {
-    "node": ">=14",
-    "yarn": ">= 1.0.0"
+    "node": ">=14"
   },
   "scripts": {
     "dev:chrome": "cross-env NODE_ENV=development cross-env TARGET_BROWSER=chrome webpack --watch",
