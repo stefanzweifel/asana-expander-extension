@@ -8,7 +8,7 @@
   "author": "Stefan Zweifel <hello@stefanzweifel.io>",
   "license": "MIT",
   "engines": {
-    "node": ">=10",
+    "node": ">=14",
     "yarn": ">= 1.0.0"
   },
   "scripts": {
@@ -55,7 +55,6 @@
     "extract-loader": "^5.0.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.0.3",
-    "node-sass": "^4.13.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
     "prettier": "^2.0.2",
