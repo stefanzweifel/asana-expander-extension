@@ -29,7 +29,7 @@ const extensionReloaderPlugin =
               this.apply = () => {};
           };
 
-const getExtensionFileType = browser => {
+const getExtensionFileType = (browser) => {
     if (browser === 'opera') {
         return 'crx';
     }
@@ -51,7 +51,7 @@ module.exports = {
 
     output: {
         path: path.resolve(__dirname, 'extension', targetBrowser),
-        filename: 'js/[name].bundle.js'
+        filename: 'js/[name].bundle.js',
     },
 
     module: {
@@ -99,7 +99,7 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            sourceMap: nodeEnv === 'development' ? true : false,
+                            sourceMap: nodeEnv === 'development',
                         },
                     },
                     {

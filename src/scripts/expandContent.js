@@ -14,7 +14,7 @@ export function expandStoryFeed() {
     });
 }
 
-export function expandRichText () {
+export function expandRichText() {
     $$('.TruncatedRichText--truncated').forEach((link) => {
         console.log('::asana-expander::expandRichText', link);
 
