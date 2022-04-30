@@ -1,5 +1,7 @@
 # Asana Expander Browser Extension
 
+[![tests](https://github.com/stefanzweifel/asana-expander-extension/actions/workflows/test.yml/badge.svg)](https://github.com/stefanzweifel/asana-expander-extension/actions/workflows/test.yml)
+
 A browser extension to automatically expand comments and threads in Asana.
 
 Do you also hate to click on those "See more" links in Asana, just to see the last sentence of a longer comment? Or did you also miss an important comment in a longer comment thread in an Asana Task?
@@ -16,7 +18,7 @@ Read more about why this extension exists [on my blog](https://stefanzweifel.io/
 ## Local Development
 
 Ensure you have
-- [Node.js](https://nodejs.org) 10 or later installed
+- [Node.js](https://nodejs.org) 14 or later installed
 - [Yarn](https://yarnpkg.com) v1 or v2 installed
 
 Then run the following:
