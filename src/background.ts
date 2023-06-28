@@ -1,10 +1,6 @@
 import browser from "webextension-polyfill";
 
-browser.runtime.onInstalled.addListener((details) => {
-  console.log("Extension installed:", details);
-});
-
-browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+browser.tabs.onUpdated.addListener((tabId, changeInfo, tab): void => {
     if (changeInfo.title !== undefined) {
         browser.tabs.sendMessage(tabId, {
             message: 'url-changed',

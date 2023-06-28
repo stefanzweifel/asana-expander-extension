@@ -36,17 +36,5 @@
       ],
       "run_at": "document_end"
     }
-  ],
-
-
-  "__chrome|firefox__author": "Stefan Zweifel",
-  "__opera__developer": {
-    "name": "Stefan Zweifel"
-  },
-  "__firefox__applications": {
-    "gecko": {
-      "id": "{754FB1AD-CC3B-4856-B6A0-7786F8CA9D20}"
-    }
-  }
-
+  ]
 }
