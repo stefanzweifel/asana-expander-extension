@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x]
+        node-version: ['18.x']
 
     name: Node ${{ matrix.node-version }}
 
@@ -23,5 +23,7 @@ jobs:
       run: yarn install
 
     - name: Run Tests
-      run: yarn build
+      run: |
+        yarn build-chrome;
+        yarn build-ff;
 
