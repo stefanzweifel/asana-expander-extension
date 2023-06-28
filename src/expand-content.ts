@@ -1,20 +1,18 @@
 import {log} from './logger';
 
-function $$(selector: string, scope = document) {
+function $$(selector: string, scope: Document = document): HTMLElement[] {
     return Array.from(scope.querySelectorAll(selector));
 }
 
-export function expandStoryFeed() {
+export function expandStoryFeed(): void {
     for (const link of $$('.TaskStoryFeed-expandLink')) {
-        console.log(typeof link);
         log('Expand Story Feed', link);
         link.click();
     }
 }
 
-export function expandRichText() {
+export function expandRichText(): void {
     for (const link of $$('.TruncatedRichText--truncated')) {
-        console.log(typeof link);
         log('Expand Rich Text', link);
         link.click();
     }
