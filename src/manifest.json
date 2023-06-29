@@ -1,53 +1,40 @@
 {
-  "manifest_version": 2,
   "name": "Asana Expander",
-  "version": "2.0.1",
-  "icons": {
-    "32": "assets/icons/favicon-32.png",
-    "48": "assets/icons/favicon-48.png",
-    "128": "assets/icons/favicon-128.png"
-  },
-  "description": "Automatically show all comments on an Asana task an expand longer comments.",
   "homepage_url": "https://github.com/stefanzweifel/asana-expander-extension",
-  "short_name": "Asana Expander",
-  "permissions": [
+  "{{chrome}}.manifest_version": 3,
+  "{{firefox}}.manifest_version": 2,
+  "icons": {
+    "16": "icon/16.png",
+    "32": "icon/32.png",
+    "48": "icon/48.png",
+    "96": "icon/96.png",
+    "128": "icon/128.png"
+  },
+  "{{firefox}}.permissions": [
     "tabs",
-    "https://*.asana.com/*"
+     "*://*.asana.com/*"
   ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  "__chrome|firefox__author": "Stefan Zweifel",
-  "__opera__developer": {
-    "name": "Stefan Zweifel"
-  },
-  "__firefox__applications": {
-    "gecko": {
-      "id": "{754FB1AD-CC3B-4856-B6A0-7786F8CA9D20}"
-    }
-  },
-  "__chrome__minimum_chrome_version": "49",
-  "__opera__minimum_opera_version": "36",
-  "browser_action": {
-    "default_icon": {
-      "32": "assets/icons/favicon-32.png",
-      "48": "assets/icons/favicon-48.png",
-      "128": "assets/icons/favicon-128.png"
-    },
-    "default_title": "Asana Expander",
-    "__chrome|opera__chrome_style": false,
-    "__firefox__browser_style": false
-  },
+  "{{chrome}}.permissions": [
+    "tabs"
+  ],
+  "{{chrome}}.host_permissions": [
+    "*://*.asana.com/*"
+  ],
   "background": {
-    "scripts": [
-      "js/background.bundle.js"
-    ],
-    "__chrome|opera__persistent": false
-  },
-  "content_scripts": [{
-    "matches": [
-      "https://*.asana.com/*"
-    ],
-    "js": [
-      "js/contentScript.bundle.js"
+    "{{chrome}}.service_worker": "src/background.ts",
+    "{{firefox}}.scripts": [
+      "src/background.ts"
     ]
-  }]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.asana.com/*"
+      ],
+      "js": [
+        "src/content.ts"
+      ],
+      "run_at": "document_end"
+    }
+  ]
 }
