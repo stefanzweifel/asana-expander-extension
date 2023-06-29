@@ -2,7 +2,7 @@
 
 All notable changes to `asana-expander-extension` will be documented in this file.
 
-## v3.0.0 - 2023-06-xx
+## v3.0.0 - 2023-06-29
 
 - Add Support for Manifest v3 for Chrome (still using Manifest v2 for Firefox)
 - Rewrite Extension in TypeScript
