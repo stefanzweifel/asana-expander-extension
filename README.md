@@ -19,13 +19,12 @@ Read more about why this extension exists [on my blog](https://stefanzweifel.dev
 
 Ensure you have
 - [Node.js](https://nodejs.org) 18 or later installed
-- [Yarn](https://yarnpkg.com) v1 or v2 installed
 
 Then run the following:
-- `yarn install` to install dependencies.
-- `yarn dev` to start the development server 
-- `yarn build-chrome` to build chrome extension
-- `yarn build-ff` to build firefox addon
+- `npm run install` to install dependencies.
+- `npm run dev` to start the development server 
+- `npm run build-chrome` to build chrome extension
+- `npm run build-ff` to build firefox addon
 
 ### Chrome
 
@@ -43,16 +42,16 @@ Then run the following:
 
 ### Chrome
 
-- Run `yarn run build-chrome`
+- Run `npm run build-chrome`
 - Create ZIP of `./dist`
 - Navigate to Chrome Web Store Developer Dashboard
 - Upload new version to Dashboard
 
-- `yarn run build` builds the extension for all the browsers to `extension/BROWSER` directory respectively.
+- `npm run build` builds the extension for all the browsers to `extension/BROWSER` directory respectively.
 
 ### Firefox
 
-- Run `yarn run build-ff`
+- Run `npm run build-ff`
 - Create Zip of `./dist`
 - Navigate to [addons.mozilla.org](https://addons.mozilla.org/en-US/developers/addon/asana-expander/versions/submit/)
 - Upload new version
