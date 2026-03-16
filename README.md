@@ -4,7 +4,7 @@
 
 > [!Note]
 > This extension is no longer actively maintained. I no longer use Asana.
-> But in the 5 years this extension was used by me, it worked flawlessly and without bugs. I'm sure this will be the case for the years to come.
+> Check out [this actively maintained fork](https://github.com/structuredsoftware/asana-expander-v2-extension) of the project.
 
 ---
 
